@@ -2,628 +2,87 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title> | </title>
+<link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css" rel="stylesheet">
 
-<title>Robert Arnold | Systems Engineer</title>
 <style type="text/css">
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]) {
-  display: none;
-}
-[hidden] {
-  display: none;
-}
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-body {
-  margin: 0;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover,
-a:active {
-  outline: 0;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b,
-strong {
-  font-weight: bold;
-}
-blockquote {
-  margin: 1em 40px;
-}
-dfn {
-  font-style: italic;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
-p,
-pre {
-  margin: 1em 0;
-}
-pre,
-code,
-kbd,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-q {
-  quotes: none;
-}
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-small {
-  font-size: 75%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-dd {
-  margin: 0 0 0 40px;
-}
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-figure {
-  margin: 0;
-}
-form {
-  margin: 0;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
-}
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-button,
-input {
-  line-height: normal;
-}
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-  *overflow: visible;
-}
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body.pdf {
-  color: black;
-}
-body.pdf a {
-  text-decoration: none;
-  color: black;
-}
-body.pdf .container {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 0;
-  background: none;
-  border: none;
-  border-width: 8px 0 2px 0;
-  text-align: left;
-}
-body.pdf .resume {
-  position: relative;
-  padding: 40px 80px;
-}
-body.pdf a[href$='.pdf'] {
-  display: none;
-}
-body.pdf h1 {
-  letter-spacing: 0;
-  margin-top: 0;
-  font-size: 48px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-body.pdf h2 {
-  letter-spacing: 0;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: normal;
-}
-body.pdf h3 {
-  float: left;
-  width: 16%;
-  font-style: normal;
-}
-body.pdf h3+p {
-  float: left;
-  width: 78%;
-}
-body.pdf blockquote {
-  top: 40px;
-  right: 50px;
-  position: absolute;
-}
-body.pdf ul li {
-  width: 33%;
-  float: left;
-}
-body.pdf ul dl {
-  margin: 0;
-  padding: 0.3em 0 0;
-}
-body.pdf ul dl dt {
-  font-size: 122%;
-  font-weight: normal;
-  margin: 0 0 .75em;
-}
-body.pdf ul dl dd {
-  padding: 0 2em 0 0;
-}
-body.pdf ol {
-  float: left;
-  width: 79%;
-  margin: .7em 0 0;
-}
-body.pdf ol li {
-  width: 33%;
-  margin: 0;
-}
-body.pdf ol li:nth-child(3n) {
-  width: 34%;
-}
-body.pdf ol li:nth-child(1),
-body.pdf ol li:nth-child(2),
-body.pdf ol li:nth-child(3) {
-  border-top: none;
-}
-body.pdf dl {
-  margin: .7em 0 0;
-  page-break-inside: avoid !important;
-  display: block;
-  width: 79%;
-  float: left;
-}
-body.pdf dl strong {
-  float: right;
-  margin-top: -2em;
-}
-body.pdf dl em {
-  font-size: 130%;
-  font-style: normal;
-}
-
-.clearfix {
-  zoom: 1;
-}
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  clear: both;
-  content: ".";
-}
-body {
-  font-family: 'Hoefler Text', Times New Roman, Times, serif;
-  color: #444;
-}
-h1,
-h2,
-h3,
-h4,
-ul dl dt {
-  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-}
-.container {
-  margin: 0 auto;
-  padding: 0;
-  background: whiteSmoke;
-  border: solid #666;
-  border-width: 8px 0 2px 0;
-  text-align: left;
-}
-.resume {
-  position: relative;
-  padding: 10px 20px;
-}
-a {
-  color: #990003;
-}
-a[href$='.pdf'] {
-  display: inline-block;
-  background: #666;
-  color: white;
-  padding: 6px 12px;
-  margin-bottom: 6px;
-  text-decoration: none;
-}
-blockquote {
-  margin: 0;
-  padding: 0;
-  line-height: 1.4em;
-}
-hr {
-  display: block;
-  position: relative;
-  padding: 0;
-  margin: 18px auto;
-  width: 100%;
-  clear: both;
-  border: none;
-  border-top: 1px solid #CCC;
-  font-size: 1px;
-  line-height: 0;
-  overflow: visible;
-  page-break-after: avoid;
-}
-h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 36px;
-  letter-spacing: -1px;
-  font-weight: normal;
-}
-h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-style: italic;
-  letter-spacing: -1px;
-  font-weight: normal;
-}
-h3 {
-  margin: 0px 20px;
-  padding: 0 0 .5em;
-  font-size: 150%;
-  font-style: italic;
-  font-weight: normal;
-}
-h3+p {
-  margin: .6em 0 16px;
-  padding: 0;
-  display: block;
-  font-size: 104%;
-  line-height: 24px;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: table;
-}
-ul li {
-  margin: 0;
-  padding: 0;
-}
-ul dl {
-  margin: .3em 0 0;
-  padding: 0;
-  width: 100%;
-}
-ul dl dt {
-  font-size: 100%;
-}
-ul dl dd {
-  margin: 0 0 1em;
-  padding: 0 2em 0 0;
-  font-size: .8em;
-  line-height: 1.5em;
-}
-ol {
-  margin: 0;
-  padding: 0 0 .75em;
-  width: 84%;
-  display: inline-block;
-}
-ol li {
-  margin: 0 0 0 1em;
-  padding: 0;
-  border-top: 1px solid #CCCCCC;
-  width: 100%;
-  float: left;
-  list-style: none;
-  line-height: 24px;
-  font-size: 14px;
-}
-ol li:nth-child(1) {
-  border-top: none;
-}
-dl {
-  display: inline-block;
-  width: 78%;
-  margin: 0;
-  padding: 0;
-}
-dl dt {
-  margin: 0;
-  padding: 0;
-  font-size: 140%;
-}
-dl dd {
-  margin: 0 0 1.5em;
-  padding: 0;
-  font-size: 80%;
-  line-height: 1.4em;
-}
-dl strong {
-  display: block;
-}
-dl em {
-  display: block;
-  font-size: 110%;
-  margin: .15em 0 .5em;
-  font-style: bold;
-}
 #footer {
   display: none;
 }
 #footer + p {
   width: 100%;
   font-size: 11px;
-  text-align: center;
-}
-
-@media screen and (min-width: 37.5em) {
-  body {
-    padding: 2em 0;
-  }
-  blockquote {
-    top: 10px;
-    right: 50px;
-    position: absolute;
-  }
-  h1 {
-    margin-top: .5em;
-  }
-  ol {
-    margin: 0 0 0 1em;
-  }
-  ol li {
-    width: 50%;
-    margin: 0;
-  }
-  ol li:nth-child(1),
-  ol li:nth-child(2) {
-    border-top: none;
-  }
-}
-@media screen and (min-width: 57em) {
-  .container {
-    width: 912px;
-  }
-  .resume {
-    position: relative;
-    padding: 40px 50px;
-  }
-  blockquote {
-    top: 40px;
-    right: 50px;
-    position: absolute;
-  }
-  h1 {
-    margin-top: 0;
-    font-size: 48px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: normal;
-  }
-  h2 {
-    text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: 2px;
-    font-weight: normal;
-  }
-  h3 {
-    float: left;
-    width: 16%;
-  }
-  h3+p {
-    float: left;
-    width: 78%;
-  }
-  ul li {
-    width: 33%;
-    float: left;
-  }
-  ul dl dt {
-    font-size: 122%;
-    font-weight: normal;
-    margin-bottom: .75em;
-  }
-  ul dl dd {
-    padding: 0 2em 0 0;
-  }
-  ol {
-    float: left;
-    width: 79%;
-    margin: .6em 0 0;
-  }
-  ol li {
-    width: 33%;
-    margin: 0;
-  }
-  ol li:nth-child(3n) {
-    width: 34%;
-  }
-  ol li:nth-child(1),
-  ol li:nth-child(2),
-  ol li:nth-child(3) {
-    border-top: none;
-  }
-  dl {
-    margin: .5em 0 0;
-  }
-  dl strong {
-    float: right;
-    margin-top: -2em;
-  }
-  dl em {
-    font-size: 130%;
-    font-style: normal;
-  }
 }
 
 </style>
 </head>
+<body>
+    <div class="container">
+        <h4>Robert Arnold - Systems Engineer</h4>
 
-<body class="">
-
-<div class="container">
-    <div class="resume">
-        <h1>Robert Arnold</h1>
-
-<h2>Systems Engineer</h2>
-
-<p>1201 Minnehaha Ave W., Saint Paul, MN 55104
-<a href="robertarnold@outlook.com">robertarnold@outlook.com</a>
-(612) 859-8404</p>
+<p>1201 Minnehaha Ave W, Saint Paul, MN 55104 |  <a href="robertarnold@outlook.com">robertarnold@outlook.com</a> | (612) 859-8404</p>
 
 <hr />
 
 <h3>Profile</h3>
 
-<p>An experienced systems engineer, who provides value to teams and their customers, through collaboration, innovation, problem-solving, and software development.</p>
+<p>An experienced systems engineer and software developer, who provides value to customers and technology teams through collaboration, innovation, and problem-solving.</p>
+
+<hr />
+
+<h3>Experience</h3>
+
+<dl>
+<dt>Wells Fargo (Minneapolis, MN)</dt>
+<dd><em><a href="http://wellsfargo.com">Wells Fargo</a></em>
+<strong>Application Systems Engineer (DevOps Engineer)</strong> (6/2015 to present)</dd>
+</dl>
+
+<ul>
+<li>Built a tool in python and terraform to test target infrastructure. This tool enabled people to more quickly converge on solving issues together. Tests that were once manual and time-consuming became automatic; a quality improvement, and a time reduction of hours to minutes. </li>
+<li>Created data visualizations for important problems, using grafana, ELK, and bash. This has lead to increased visibility of issues, and a 50% reduction in time to triage.</li>
+</ul>
+
+<dl>
+<dt>Infor (Saint Paul, MN)</dt>
+<dd><em><a href="http://infor.com">Infor</a>  (Business Applications, Formerly Lawson)</em>
+<strong>System Administrator</strong> (12/2013 to 6/2015)</dd>
+</dl>
+
+<ul>
+<li>Increased consistency, and shortened time to provision infrastructure to 1/3rd with automation and process improvement. Reduced provisioning process to a few steps in VMware and AWS, using Powershell and PowerCLI or AWS tools. </li>
+<li>Solved difficult inventory problem using Powershell and Excel to ensure security compliance of inventory of hosts.</li>
+</ul>
+
+<dl>
+<dt>3M (Maplewood, MN)</dt>
+<dd><em><a href="http://3m.com/us">3M</a> (Digital Media Group).</em>
+<strong>Windows System Administrator</strong> (8/2012 to 11/2013)</dd>
+</dl>
+
+<ul>
+<li>Supported automation to deploy a 12-server application stack, and administered physical and virtual infrastructure in support of SDLC, including hypervisor configuration and instance provisioning. </li>
+</ul>
+
+<dl>
+<dt>EPM (Hudson, WI)</dt>
+<dd><em><a href="http://www.epm-inc.com/">EPM</a> (A nuclear safety firm).</em>
+<strong>Staff Engineer (System Administrator)</strong> (8/2011 to 8/2012)</dd>
+</dl>
+
+<ul>
+<li>Solved a variety of IT application needs for a team of Nuclear Safety Engineers. Managed IT to best align with business needs. Administered network, firewall, server, workstation, and provided technical support to users. Designed and implemented IT at new branch office. Made purchasing recommendations IT equipment.</li>
+</ul>
+
+<dl>
+<dt>OSI (Plymouth, MN)</dt>
+<dd><em><a href="http://osii.com">OSI</a> (Company providing automation for the Utility industry).</em>
+<strong>Network Engineer</strong> (12/2007 to 8/2011)</dd>
+</dl>
+
+<ul>
+<li>Was responsible for the design, installation, and configuration of computer systems for corporate and government customers running electrical power SCADA systems. System components include a broad range of technologies.</li>
+</ul>
 
 <hr />
 
@@ -640,37 +99,6 @@ dl em {
 <li>Openstack</li>
 <li>Puppet/Chef</li>
 </ol>
-
-<hr />
-
-<h3>Experience</h3>
-
-<dl>
-<dt>Wells Fargo (Minneapolis, MN)</dt>
-<dd><em><a href="http://wellsfargo.com">Wells Fargo</a></em>
-<strong>Application Systems Engineer (DevOps Engineer)</strong> (6/2015 to present)
-Greatly improved deployment process by writing a tool to provision with different parameters and endpoint combinations using python and terraform. Enabled infrastructure to provision an application in hours, not months using Puppet, Openstack, and terraform. Brought visibility to hard-to-see issues impacting provisioning by the use of metrics using grafana, ELK, and bash. Provided systems troubleshooting of puppet and openstack architecture using bash and vi.</dd>
-
-<dt>Infor (Saint Paul, MN)</dt>
-<dd><em><a href="http://infor.com">Infor</a>  (Business Applications, Formerly Lawson)</em>
-<strong>System Administrator</strong> (12/2013 to 6/2015)
-Increased consistency, and shortened time to provision infrastructure by automation and process improvement. Reduced provisioning process to a few steps in VMware and AWS, using Powershell and PowerCLI or AWS tools. Solved difficult inventory problem using Powershell and Excel to ensure security compliance of inventory of hosts.</dd>
-
-<dt>3M (Maplewood, MN)</dt>
-<dd><em><a href="http://3m.com/us">3M</a> (Digital Media Group).</em>
-<strong>Windows System Administrator</strong> (8/2012 to 11/2013)
-Supported automation to deploy a twelve server application stack. Administered physical and virtual infrastructure in support of SDLC, including hypervisor configuration and instance provisioning.</dd>
-
-<dt>EPM (Hudson, WI)</dt>
-<dd><em><a href="http://www.epm-inc.com/">EPM</a> (A nuclear safety firm).</em>
-<strong>Staff Engineer (System Administrator)</strong> (8/2011 to 8/2012)
-Solved a variety of IT application needs for a team of Nuclear Safety Engineers. Managed IT to best align with business needs. Administered network, firewall, server, workstation, and provided technical support to users. Designed and implemented IT at new branch office. Made purchasing recommendations IT equipment.</dd>
-
-<dt>OSI (Plymouth, MN)</dt>
-<dd><em><a href="http://osii.com">OSI</a> (Company providing automation for the Utility industry).</em>
-<strong>Network Engineer</strong> (12/2007 to 8/2011)
-Was responsible for the design, installation, and configuration of computer systems for corporate and government customers running electrical power SCADA systems. System components include a broad range of technologies.</dd>
-</dl>
 
 <hr />
 
@@ -692,7 +120,5 @@ University of Minnesota College of Science and Engineering, Graduated 2006</p>
 <hr />
 
     </div>
-</div>
-
 </body>
 </html>
