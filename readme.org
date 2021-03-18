@@ -1,0 +1,7 @@
+One way to print to pdf:
+
+#+begin_example
+wkhtmltopdf --print-media-type --zoom 7 resume.html resume.pdf; open resume.pdf
+#+end_example
+
+
