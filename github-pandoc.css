@@ -4,6 +4,13 @@
    HTML5 display definitions
    ========================================================================== */
 
+@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+}
+
 /**
  * Correct `block` display not defined in IE 8/9.
  */
